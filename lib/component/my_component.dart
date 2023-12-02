@@ -48,8 +48,8 @@ class MyComponent{
                   Expanded(
                     flex: 3,
                     child: Text("${models.title}",
-                      maxLines: 2, // بدي الحكي يطلع على سطر
-                      overflow: TextOverflow.ellipsis, // يعطي بدل الحكي نقاط
+                      maxLines: 2, 
+                      overflow: TextOverflow.ellipsis, 
                       style: GoogleFonts.almarai(
                         fontSize: 23,
                         color: Theme.of(context).colorScheme.primary,
@@ -58,16 +58,16 @@ class MyComponent{
                   ),
                   Expanded(
                     flex: 2,
-                    child: Text("${models.author}",maxLines: 2, // بدي الحكي يطلع على سطر
-                      overflow: TextOverflow.ellipsis, // يعطي بدل الحكي نقاط
+                    child: Text("${models.author}",maxLines: 2, 
+                      overflow: TextOverflow.ellipsis, 
                       style: GoogleFonts.almarai(
                         fontSize: 18,
                         color: Theme.of(context).colorScheme.primary,
                         fontWeight: FontWeight.bold,
                       ),),
                   ),
-                  Text("${models.publishedAt}",maxLines: 1, // بدي الحكي يطلع على سطر
-                    overflow: TextOverflow.ellipsis, // يعطي بدل الحكي نقاط
+                  Text("${models.publishedAt}",maxLines: 1, 
+                    overflow: TextOverflow.ellipsis, 
                     style: GoogleFonts.almarai(fontSize: 20,
                       color: Colors.grey ,
                     ),),
