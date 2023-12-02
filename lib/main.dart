@@ -39,8 +39,7 @@ class MyApp extends StatelessWidget {
             // home: const Count(),
             // home: const Home(),
             // home: HomeStream(),
-             //home: HomeStream2(),
-           home: Test(),
+             home: HomeStream2(),
           );
         },
       )
