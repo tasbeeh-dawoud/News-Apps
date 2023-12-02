@@ -10,20 +10,7 @@ class HomeStream extends StatefulWidget {
   @override
   State<HomeStream> createState() => _HomeStreamState();
 }
- // Stream<int> getData()async*{
- //  // yield 1 ;
- //  // await Future.delayed(Duration(seconds: 1));
- //  // yield 2;
- //
- //   for (int i = 0; i<=10 ; i++){
- //     await Future.delayed(Duration(seconds: 1));
- //     if (i == 5){
- //       throw ("Errors");
- //     }
- //     yield i ;
- //   }
- //
- // }
+
 class _HomeStreamState extends State<HomeStream> {
   @override
   Widget build(BuildContext context) {
@@ -51,17 +38,3 @@ class _HomeStreamState extends State<HomeStream> {
   }
 }
 
-// StreamBuilder(
-//     stream: getData() ,
-//     builder: (context, snapshot) {
-//         if(snapshot.hasData){
-//           return Text('${snapshot.data}',style: TextStyle(fontSize: 30,color: Colors.cyan),);
-//         }
-//         else if (snapshot.hasError){
-//           return Text('${snapshot.error}',style: TextStyle(fontSize: 30,color: Colors.deepOrange));
-//         }
-//         else {
-//             return CircularProgressIndicator() ;
-//         }
-//     },
-// ),
