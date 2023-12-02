@@ -14,7 +14,7 @@ class StreamCubit extends Cubit<StreamState> {
 
      BitCoin? bitCoin ;
      void getBitCoin()async{
-     while(true){ //انفينتي لووب طول ما الشرط ترو يضل يجيب بيانات
+     while(true){ 
      await Future.delayed(Duration(seconds: 2),()async{
        await HttpHelper.getDataFromApi(LINK: BITCOIN).then((value){
          bitCoin = BitCoin.fromJson(value);
@@ -24,7 +24,7 @@ class StreamCubit extends Cubit<StreamState> {
          print(onError.toString());
          emit(StreamGetBitCoinError());
        });
-     }); // حطيتها عشان ممكن يطلع عندي خطأ عشان اتفاداه
+     }); 
    }
 
   }
