@@ -21,7 +21,6 @@ class Science extends StatelessWidget {
           child: Column(
             children: [
               ConditionalBuilder(
-                // انا ببنيلك الصفحة بناءا على الشروط اللي انت بتحطها واذا ما تحقق الشرط بروح على الفل باك وبنفذ الاشي اللي حاطه فيه
                 condition: state is ! HomeGetScienceDataLoading,
                 builder: (context) => ListView.separated(
                     shrinkWrap: true,
